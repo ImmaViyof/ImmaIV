@@ -22,10 +22,11 @@ Callback Queue Flow: Provides callback functionality for customers waiting in qu
 estimated functionality to let customer thier time in queue prior get connected
 Users: Defines user profiles, initial setup details, and routing profiles. Contains encrypted passwords for the initial set of users.
 
-ContactFlows: Includes predefined contact flows, such as:
+ContactFlows: Includes predefined contact flows, such as: 
 
 Main inbound flows ( that has all the subflows)
 SUB FLOW;
+InterVision-HiddenQueueflow (VIP client or Premium account)
 InterVision-TechnicalServiceSubFlow
 InterVision-AccountGeneralInquirySubFlow.
 InterVision-TechnicalServiceSpanishSubFlow
