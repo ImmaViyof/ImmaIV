@@ -1,0 +1,92 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "462eff99-f79a-417c-97e1-f7022f9c4c96",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 40,
+      "y": 40
+    },
+    "ActionMetadata": {
+      "0f663991-7b66-41d5-8e5d-008e64c715f4": {
+        "position": {
+          "x": 765.6,
+          "y": 280.8
+        }
+      },
+      "878fd9a4-e466-4cff-9107-f3611327f36d": {
+        "position": {
+          "x": 492.8,
+          "y": 150.4
+        },
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "462eff99-f79a-417c-97e1-f7022f9c4c96": {
+        "position": {
+          "x": 190.4,
+          "y": 88
+        }
+      }
+    },
+    "Annotations": [],
+    "name": "InterVision-OutboundWhisperFlow",
+    "description": "",
+    "type": "outboundWhisper",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {},
+      "Identifier": "0f663991-7b66-41d5-8e5d-008e64c715f4",
+      "Type": "EndFlowExecution",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "Text": "$.External.CustomerWhisper"
+      },
+      "Identifier": "878fd9a4-e466-4cff-9107-f3611327f36d",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "0f663991-7b66-41d5-8e5d-008e64c715f4"
+      }
+    },
+    {
+      "Parameters": {
+        "RecordingBehavior": {
+          "RecordedParticipants": [
+            "Agent",
+            "Customer"
+          ]
+        },
+        "AnalyticsBehavior": {
+          "Enabled": "True",
+          "AnalyticsLanguage": "en-US",
+          "AnalyticsRedactionBehavior": "Enabled",
+          "AnalyticsRedactionResults": "RedactedAndOriginal",
+          "AnalyticsRedactionMaskMode": "PII",
+          "ChannelConfiguration": {
+            "Chat": {
+              "AnalyticsModes": []
+            },
+            "Voice": {
+              "AnalyticsModes": [
+                "PostContact"
+              ]
+            }
+          }
+        }
+      },
+      "Identifier": "462eff99-f79a-417c-97e1-f7022f9c4c96",
+      "Type": "UpdateContactRecordingBehavior",
+      "Transitions": {
+        "NextAction": "878fd9a4-e466-4cff-9107-f3611327f36d"
+      }
+    }
+  ]
+}

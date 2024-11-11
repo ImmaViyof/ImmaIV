@@ -1,0 +1,112 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "b9b436a4-2962-4763-9bb8-fc6cdb81fcba",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 40,
+      "y": 40
+    },
+    "ActionMetadata": {
+      "e1190e68-35ae-4003-a844-ea4f8e91e696": {
+        "position": {
+          "x": 542.4,
+          "y": 114.4
+        }
+      },
+      "0ecf406d-a906-4929-8f9a-c5c13a76dcb8": {
+        "position": {
+          "x": 235.2,
+          "y": 268.8
+        },
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "b9b436a4-2962-4763-9bb8-fc6cdb81fcba": {
+        "position": {
+          "x": 229.6,
+          "y": 58.4
+        },
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "InterVision-PromptLookupSpanishLambdaFunction"
+          }
+        },
+        "dynamicMetadata": {
+          " PromptId": false
+        }
+      }
+    },
+    "Annotations": [],
+    "name": "InterVision-SytemFailureSpanishFlow",
+    "description": "",
+    "status": "published",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {},
+      "Identifier": "e1190e68-35ae-4003-a844-ea4f8e91e696",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "Text": "$.External.SystemFailure"
+      },
+      "Identifier": "0ecf406d-a906-4929-8f9a-c5c13a76dcb8",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "e1190e68-35ae-4003-a844-ea4f8e91e696",
+        "Errors": [
+          {
+            "NextAction": "e1190e68-35ae-4003-a844-ea4f8e91e696",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:039765606255:function:InterVision-PromptLookupSpanishLambdaFunction",
+        "InvocationTimeLimitSeconds": "3",
+        "LambdaInvocationAttributes": {
+          " PromptId": "SystemFailure"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "b9b436a4-2962-4763-9bb8-fc6cdb81fcba",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "0ecf406d-a906-4929-8f9a-c5c13a76dcb8",
+        "Errors": [
+          {
+            "NextAction": "0ecf406d-a906-4929-8f9a-c5c13a76dcb8",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ],
+  "Settings": {
+    "InputParameters": [],
+    "OutputParameters": [],
+    "Transitions": [
+      {
+        "DisplayName": "Success",
+        "ReferenceName": "Success",
+        "Description": ""
+      },
+      {
+        "DisplayName": "Error",
+        "ReferenceName": "Error",
+        "Description": ""
+      }
+    ]
+  }
+}

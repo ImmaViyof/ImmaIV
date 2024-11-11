@@ -1,0 +1,113 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "523f0dc6-8457-45a9-a012-df8d9e1bef3c",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 40,
+      "y": 40
+    },
+    "ActionMetadata": {
+      "8bc8387e-1bf7-49d5-82d8-0d41b52f8cec": {
+        "position": {
+          "x": 497.6,
+          "y": 56
+        },
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "8f75de00-1f4a-41ec-81eb-6e8d4a9c6564": {
+        "position": {
+          "x": 628,
+          "y": 260.8
+        }
+      },
+      "523f0dc6-8457-45a9-a012-df8d9e1bef3c": {
+        "position": {
+          "x": 196.8,
+          "y": 40
+        },
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "InterVision-PromptLookupLambdaFunction"
+          }
+        },
+        "dynamicMetadata": {
+          "PromptId": false
+        }
+      },
+      "e7025a35-f43d-47ba-bfa7-37e4b3d79e72": {
+        "position": {
+          "x": 212.8,
+          "y": 273.6
+        },
+        "parameters": {
+          "PromptId": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      }
+    },
+    "Annotations": [],
+    "name": "InterVision-AgentWhisperFlow",
+    "description": "",
+    "type": "agentWhisper",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "Text": "$.External.SystemFailure"
+      },
+      "Identifier": "8bc8387e-1bf7-49d5-82d8-0d41b52f8cec",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "8f75de00-1f4a-41ec-81eb-6e8d4a9c6564"
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "8f75de00-1f4a-41ec-81eb-6e8d4a9c6564",
+      "Type": "EndFlowExecution",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:039765606255:function:InterVision-PromptLookupLambdaFunction",
+        "InvocationTimeLimitSeconds": "3",
+        "LambdaInvocationAttributes": {
+          "PromptId": "AgentWhisper"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "523f0dc6-8457-45a9-a012-df8d9e1bef3c",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "e7025a35-f43d-47ba-bfa7-37e4b3d79e72",
+        "Errors": [
+          {
+            "NextAction": "8bc8387e-1bf7-49d5-82d8-0d41b52f8cec",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "PromptId": "$.External.AgentWhisper"
+      },
+      "Identifier": "e7025a35-f43d-47ba-bfa7-37e4b3d79e72",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "8f75de00-1f4a-41ec-81eb-6e8d4a9c6564"
+      }
+    }
+  ]
+}

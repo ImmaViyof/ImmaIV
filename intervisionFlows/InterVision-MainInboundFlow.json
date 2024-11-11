@@ -1,0 +1,1338 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "869bb566-f336-43cd-9cf7-a3e86d47cf96",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 40,
+      "y": 40
+    },
+    "ActionMetadata": {
+      "b60a49a2-f3ce-4baf-b034-3495f6a7979d": {
+        "position": {
+          "x": 1434.4,
+          "y": 77.6
+        }
+      },
+      "92cf374c-0936-46cf-a983-bbb02f5c5469": {
+        "position": {
+          "x": 2310.4,
+          "y": 519.2
+        }
+      },
+      "43879c3f-60ea-4ce1-a575-8fc269212451": {
+        "position": {
+          "x": 765.6,
+          "y": 736.8
+        },
+        "overrideConsoleVoice": false
+      },
+      "2c4d8163-9e44-425c-8735-0b94a6bf889e": {
+        "position": {
+          "x": 1140.8,
+          "y": 1948.8
+        }
+      },
+      "1ef80f55-d12b-4703-a78a-129f1b045a5b": {
+        "position": {
+          "x": 1433.6,
+          "y": 237.6
+        },
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "InterVision-PromptLookupSpanishLambdaFunction"
+          }
+        },
+        "dynamicMetadata": {
+          "promptId": false
+        }
+      },
+      "da6d6ab3-a39c-4a11-8e05-693cfd54bc6c": {
+        "position": {
+          "x": 1072.8,
+          "y": 414.4
+        },
+        "overrideConsoleVoice": false
+      },
+      "5691203a-6466-4d04-996e-ff3f056f1770": {
+        "position": {
+          "x": 761.6,
+          "y": 936.8
+        },
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "b30070a7-77a3-445b-b6a6-fc00c356425e": {
+        "position": {
+          "x": 757.6,
+          "y": 443.2
+        },
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true,
+        "conditionMetadata": [
+          {
+            "id": "535eecf9-82c1-4f2b-af9f-df91c52bf566",
+            "value": "1"
+          },
+          {
+            "id": "9ec8edea-761c-49c8-bf7c-49594921f1f4",
+            "value": "2"
+          }
+        ]
+      },
+      "bc9e06aa-9b86-44e5-8079-7f9630bb1271": {
+        "position": {
+          "x": 1074.4,
+          "y": 600.8
+        },
+        "parameters": {
+          "FlowModuleId": {
+            "displayName": "InterVision-SytemFailure"
+          }
+        },
+        "contactFlowModuleName": "InterVision-SytemFailure"
+      },
+      "d25140db-b55a-49ee-a4ce-b0a711c2820f": {
+        "position": {
+          "x": 1093.6,
+          "y": 76
+        },
+        "parameters": {
+          "FlowModuleId": {
+            "displayName": "InterVision-SytemFailure"
+          }
+        },
+        "contactFlowModuleName": "InterVision-SytemFailure"
+      },
+      "cf3a95ae-c334-4b6c-9038-724f89e17fbd": {
+        "position": {
+          "x": 765.6,
+          "y": 218.4
+        },
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "03f748d5-76ab-42ae-b925-1bbe7fc47f9d": {
+        "position": {
+          "x": 1778.4,
+          "y": 1252
+        }
+      },
+      "869bb566-f336-43cd-9cf7-a3e86d47cf96": {
+        "position": {
+          "x": 417.6,
+          "y": 12
+        }
+      },
+      "e93662d5-6a93-41b4-b3ce-7a854d74c40b": {
+        "position": {
+          "x": 423.2,
+          "y": 199.2
+        }
+      },
+      "b95e93fa-95cd-4e8c-bca2-1755595d2b79": {
+        "position": {
+          "x": 1078.4,
+          "y": 840
+        }
+      },
+      "9b614ac0-d1a3-4fe2-b991-6f33baac23b4": {
+        "position": {
+          "x": 412.8,
+          "y": 1218.4
+        },
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "92d4b83d-0a18-4840-85cd-5fb633fde804": {
+        "position": {
+          "x": 427.2,
+          "y": 969.6
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "0a6ebc00-78bb-49ae-96cc-edbc2ac7179d",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "true"
+          },
+          {
+            "id": "c5078614-6afe-459c-89ce-08c2fb445820",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "false"
+          }
+        ]
+      },
+      "14553284-145c-4d3e-a8b3-960e1a2442a4": {
+        "position": {
+          "x": 427.2,
+          "y": 372.8
+        },
+        "overrideConsoleVoice": false
+      },
+      "bb8e9a41-5d50-47d6-899f-a39a9cb0ca4a": {
+        "position": {
+          "x": 430.4,
+          "y": 757.6
+        },
+        "parameters": {
+          "Attributes": {
+            "isHoliday": {
+              "useDynamic": true
+            },
+            "message": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicParams": [
+          "isHoliday",
+          "message"
+        ]
+      },
+      "fa27215f-2efc-4dae-8bab-0aeec2cc3ddc": {
+        "position": {
+          "x": 432.8,
+          "y": 548
+        },
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "InterVision-HolidayLambdaFunction"
+          }
+        },
+        "dynamicMetadata": {}
+      },
+      "2c0446db-643a-4e35-94b4-d4e8f073049b": {
+        "position": {
+          "x": 1128,
+          "y": 1176
+        },
+        "parameters": {
+          "ContactFlowId": {
+            "displayName": "InterVision-HQEnglishFlow"
+          }
+        },
+        "ContactFlow": {
+          "text": "InterVision-HQEnglishFlow"
+        }
+      },
+      "c1689286-60f2-4f05-b3cf-4073d3c89765": {
+        "position": {
+          "x": 407.2,
+          "y": 1424.8
+        },
+        "parameters": {
+          "EventHooks": {
+            "CustomerQueue": {
+              "displayName": "InterVision-CustomerQueueFlow"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "InterVision-CustomerQueueFlow",
+          "id": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/contact-flow/9286dccd-27f7-4b9f-8e9b-3198581f9744"
+        },
+        "customerOrAgent": true
+      },
+      "91bf72f8-dbeb-42e7-9a2f-24272a0a54c5": {
+        "position": {
+          "x": 756,
+          "y": 16
+        },
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "InterVision-PromptLookupLambdaFunction"
+          }
+        },
+        "dynamicMetadata": {
+          " PromptId": false
+        }
+      },
+      "cd6da5c2-29e0-4cf4-8fb6-de6dbbec316f": {
+        "position": {
+          "x": 404.8,
+          "y": 1628.8
+        },
+        "parameters": {
+          "EventHooks": {
+            "CustomerWhisper": {
+              "displayName": "InterVision-CustomerWhisperFlow"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "InterVision-CustomerWhisperFlow",
+          "id": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/contact-flow/e35a251b-5ef0-47ca-9ab4-6986365e4567"
+        },
+        "customerOrAgent": true
+      },
+      "745e067b-a7b5-498d-9329-e7470093747f": {
+        "position": {
+          "x": 431.2,
+          "y": 2434.4
+        },
+        "parameters": {
+          "EventHooks": {
+            "CustomerHold": {
+              "displayName": "InterVision-CustomerHoldFlow"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "InterVision-CustomerHoldFlow",
+          "id": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/contact-flow/3816cff8-2d17-4e32-a2ba-854c5b3ac10f"
+        },
+        "customerOrAgent": true
+      },
+      "b84998c7-a30a-42f0-abf8-a297beac4116": {
+        "position": {
+          "x": 782.4,
+          "y": 1901.6
+        },
+        "parameters": {
+          "FlowModuleId": {
+            "displayName": "InterVision-SytemFailure"
+          }
+        },
+        "contactFlowModuleName": "InterVision-SytemFailure"
+      },
+      "c3ea608d-ceaa-444e-99c2-e37f5bbe197c": {
+        "position": {
+          "x": 426.4,
+          "y": 2244
+        },
+        "parameters": {
+          "EventHooks": {
+            "AgentHold": {
+              "displayName": "InterVision-AgentHoldFlow"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "InterVision-AgentHoldFlow",
+          "id": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/contact-flow/40dab8bc-9728-4a1b-b67d-d693122bc875"
+        },
+        "customerOrAgent": false
+      },
+      "9429d4d9-ef5b-4b45-ac9a-33e4f1fe43c8": {
+        "position": {
+          "x": 404.8,
+          "y": 1836.8
+        },
+        "parameters": {
+          "EventHooks": {
+            "AgentWhisper": {
+              "displayName": "InterVision-AgentWhisperFlow"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "InterVision-AgentWhisperFlow",
+          "id": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/contact-flow/4537a319-5de1-41a5-97c4-fe6506976280"
+        },
+        "customerOrAgent": false
+      },
+      "6e79dca5-58ad-4092-a272-bfad40dd8be7": {
+        "position": {
+          "x": 420,
+          "y": 2036
+        },
+        "parameters": {
+          "EventHooks": {
+            "CustomerRemaining": {
+              "displayName": "InterVision-SurveyFlow"
+            }
+          }
+        },
+        "contactFlow": {
+          "text": "InterVision-SurveyFlow",
+          "id": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/contact-flow/14840254-76f5-40f7-a31e-12f400c08711"
+        }
+      },
+      "59e4cdc7-1d2f-4e2d-98c9-90fa98953990": {
+        "position": {
+          "x": 1132.8,
+          "y": 1314.4
+        },
+        "parameters": {
+          "ContactFlowId": {
+            "displayName": "InterVision-TechServiceSubFlow"
+          }
+        },
+        "ContactFlow": {
+          "text": "InterVision-TechServiceSubFlow"
+        }
+      },
+      "e744ea1f-4ae8-4a35-8863-2b881de2edd9": {
+        "position": {
+          "x": 777.6,
+          "y": 1551.2
+        }
+      },
+      "1de79e8e-ebac-4d0d-b675-7f293dfc7896": {
+        "position": {
+          "x": 764.8,
+          "y": 1148
+        },
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true,
+        "conditionMetadata": [
+          {
+            "id": "b9582769-8f15-4aa9-a133-823954b9e23e",
+            "value": "1"
+          },
+          {
+            "id": "bf010587-50ed-4263-beba-2d77cd032ec4",
+            "value": "2"
+          },
+          {
+            "id": "b67eaf60-dead-4b7f-87a8-ec5212e4ffe5",
+            "value": "9"
+          },
+          {
+            "id": "d71482e2-6550-4527-99ef-ece1f02bbb3b",
+            "value": "3"
+          }
+        ]
+      },
+      "6e5b5d57-5213-47cb-8d31-aaf876c1034b": {
+        "position": {
+          "x": 1452,
+          "y": 1223.2
+        },
+        "parameters": {
+          "FlowModuleId": {
+            "displayName": "InterVision-SytemFailure"
+          }
+        },
+        "contactFlowModuleName": "InterVision-SytemFailure"
+      },
+      "ff53063e-72bb-4fa8-a7a1-a13f5e28d3ea": {
+        "position": {
+          "x": 1129.6,
+          "y": 1456.8
+        },
+        "parameters": {
+          "ContactFlowId": {
+            "displayName": "InterVision-Account&GeneralInquirySubFlow"
+          }
+        },
+        "ContactFlow": {
+          "text": "InterVision-Account&GeneralInquirySubFlow"
+        }
+      },
+      "9999bf94-3c83-4162-9699-168348825b75": {
+        "position": {
+          "x": 1455.2,
+          "y": 819.2
+        }
+      },
+      "d9744309-f3f3-4e06-a82f-5626aafda443": {
+        "position": {
+          "x": 1809.6,
+          "y": 544.8
+        },
+        "parameters": {
+          "ContactFlowId": {
+            "displayName": "InterVision-Account&GeneralSpanishFlow"
+          }
+        },
+        "ContactFlow": {
+          "text": "InterVision-Account&GeneralSpanishFlow"
+        }
+      },
+      "4c302c44-ee24-4ac0-8c75-54994aeba624": {
+        "position": {
+          "x": 1814.4,
+          "y": 701.6
+        },
+        "parameters": {
+          "ContactFlowId": {
+            "displayName": "InterVision-HQSpanishFlow"
+          }
+        },
+        "ContactFlow": {
+          "text": "InterVision-HQSpanishFlow"
+        }
+      },
+      "6518c7df-a654-4c4b-a50d-a627740012a3": {
+        "position": {
+          "x": 1448,
+          "y": 462.4
+        },
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true,
+        "conditionMetadata": [
+          {
+            "id": "4adb544f-1fe9-4ae3-a6e1-87c3acd8de88",
+            "value": "1"
+          },
+          {
+            "id": "4602bd9a-0669-4f87-9748-04190ab6d01c",
+            "value": "2"
+          },
+          {
+            "id": "842d589c-670b-454c-8fdc-1f15471f0c1b",
+            "value": "3"
+          }
+        ]
+      },
+      "7eb216f4-dee8-492b-b86a-7f77d0611842": {
+        "position": {
+          "x": 2089.6,
+          "y": 464.8
+        },
+        "parameters": {
+          "FlowModuleId": {
+            "displayName": "InterVision-SytemFailureSpanishFlow"
+          }
+        },
+        "contactFlowModuleName": "InterVision-SytemFailureSpanishFlow"
+      },
+      "33fd6e68-1afb-4ed1-8a28-e0b30e5fa969": {
+        "position": {
+          "x": 1808,
+          "y": 393.6
+        },
+        "parameters": {
+          "ContactFlowId": {
+            "displayName": "InterVision-TechSupportSubSpanishFlow"
+          }
+        },
+        "ContactFlow": {
+          "text": "InterVision-TechSupportSubSpanishFlow"
+        }
+      }
+    },
+    "Annotations": [],
+    "name": "InterVision-MainInboundFlow",
+    "description": "",
+    "type": "contactFlow",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {},
+      "Identifier": "b60a49a2-f3ce-4baf-b034-3495f6a7979d",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {},
+      "Identifier": "92cf374c-0936-46cf-a983-bbb02f5c5469",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "TextToSpeechVoice": "Matthew"
+      },
+      "Identifier": "43879c3f-60ea-4ce1-a575-8fc269212451",
+      "Type": "UpdateContactTextToSpeechVoice",
+      "Transitions": {
+        "NextAction": "5691203a-6466-4d04-996e-ff3f056f1770"
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "2c4d8163-9e44-425c-8735-0b94a6bf889e",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:039765606255:function:InterVision-PromptLookupSpanishLambdaFunction",
+        "InvocationTimeLimitSeconds": "3",
+        "LambdaInvocationAttributes": {
+          "promptId": "MainMenu"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "1ef80f55-d12b-4703-a78a-129f1b045a5b",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "6518c7df-a654-4c4b-a50d-a627740012a3",
+        "Errors": [
+          {
+            "NextAction": "7eb216f4-dee8-492b-b86a-7f77d0611842",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "TextToSpeechVoice": "Penelope"
+      },
+      "Identifier": "da6d6ab3-a39c-4a11-8e05-693cfd54bc6c",
+      "Type": "UpdateContactTextToSpeechVoice",
+      "Transitions": {
+        "NextAction": "1ef80f55-d12b-4703-a78a-129f1b045a5b"
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "$.External.PrivacyNotice"
+      },
+      "Identifier": "5691203a-6466-4d04-996e-ff3f056f1770",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "1de79e8e-ebac-4d0d-b675-7f293dfc7896",
+        "Errors": [
+          {
+            "NextAction": "bc9e06aa-9b86-44e5-8079-7f9630bb1271",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5",
+        "Text": "$.External.LanguageOptions"
+      },
+      "Identifier": "b30070a7-77a3-445b-b6a6-fc00c356425e",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "bc9e06aa-9b86-44e5-8079-7f9630bb1271",
+        "Conditions": [
+          {
+            "NextAction": "43879c3f-60ea-4ce1-a575-8fc269212451",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          },
+          {
+            "NextAction": "da6d6ab3-a39c-4a11-8e05-693cfd54bc6c",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "1de79e8e-ebac-4d0d-b675-7f293dfc7896",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "bc9e06aa-9b86-44e5-8079-7f9630bb1271",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "bc9e06aa-9b86-44e5-8079-7f9630bb1271",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowModuleId": "d6ed9698-91ee-4a16-8001-341380b40cb4"
+      },
+      "Identifier": "bc9e06aa-9b86-44e5-8079-7f9630bb1271",
+      "Type": "InvokeFlowModule",
+      "Transitions": {
+        "NextAction": "b95e93fa-95cd-4e8c-bca2-1755595d2b79",
+        "Errors": [
+          {
+            "NextAction": "b95e93fa-95cd-4e8c-bca2-1755595d2b79",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowModuleId": "d6ed9698-91ee-4a16-8001-341380b40cb4"
+      },
+      "Identifier": "d25140db-b55a-49ee-a4ce-b0a711c2820f",
+      "Type": "InvokeFlowModule",
+      "Transitions": {
+        "NextAction": "b60a49a2-f3ce-4baf-b034-3495f6a7979d",
+        "Errors": [
+          {
+            "NextAction": "b60a49a2-f3ce-4baf-b034-3495f6a7979d",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "$.External.MainGreeting"
+      },
+      "Identifier": "cf3a95ae-c334-4b6c-9038-724f89e17fbd",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "b30070a7-77a3-445b-b6a6-fc00c356425e",
+        "Errors": [
+          {
+            "NextAction": "d25140db-b55a-49ee-a4ce-b0a711c2820f",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "03f748d5-76ab-42ae-b925-1bbe7fc47f9d",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "FlowLoggingBehavior": "Enabled"
+      },
+      "Identifier": "869bb566-f336-43cd-9cf7-a3e86d47cf96",
+      "Type": "UpdateFlowLoggingBehavior",
+      "Transitions": {
+        "NextAction": "e93662d5-6a93-41b4-b3ce-7a854d74c40b"
+      }
+    },
+    {
+      "Parameters": {
+        "RecordingBehavior": {
+          "RecordedParticipants": [
+            "Agent",
+            "Customer"
+          ]
+        },
+        "AnalyticsBehavior": {
+          "Enabled": "True",
+          "AnalyticsLanguage": "en-US",
+          "AnalyticsRedactionBehavior": "Enabled",
+          "AnalyticsRedactionResults": "RedactedAndOriginal",
+          "AnalyticsRedactionMaskMode": "PII",
+          "ChannelConfiguration": {
+            "Chat": {
+              "AnalyticsModes": []
+            },
+            "Voice": {
+              "AnalyticsModes": [
+                "RealTime"
+              ]
+            }
+          }
+        }
+      },
+      "Identifier": "e93662d5-6a93-41b4-b3ce-7a854d74c40b",
+      "Type": "UpdateContactRecordingBehavior",
+      "Transitions": {
+        "NextAction": "14553284-145c-4d3e-a8b3-960e1a2442a4"
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "b95e93fa-95cd-4e8c-bca2-1755595d2b79",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "Text": "$.External.message"
+      },
+      "Identifier": "9b614ac0-d1a3-4fe2-b991-6f33baac23b4",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "b95e93fa-95cd-4e8c-bca2-1755595d2b79",
+        "Errors": [
+          {
+            "NextAction": "b84998c7-a30a-42f0-abf8-a297beac4116",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Attributes.isHoliday"
+      },
+      "Identifier": "92d4b83d-0a18-4840-85cd-5fb633fde804",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "c1689286-60f2-4f05-b3cf-4073d3c89765",
+        "Conditions": [
+          {
+            "NextAction": "9b614ac0-d1a3-4fe2-b991-6f33baac23b4",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "true"
+              ]
+            }
+          },
+          {
+            "NextAction": "c1689286-60f2-4f05-b3cf-4073d3c89765",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "false"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "c1689286-60f2-4f05-b3cf-4073d3c89765",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "TextToSpeechVoice": "Matthew"
+      },
+      "Identifier": "14553284-145c-4d3e-a8b3-960e1a2442a4",
+      "Type": "UpdateContactTextToSpeechVoice",
+      "Transitions": {
+        "NextAction": "fa27215f-2efc-4dae-8bab-0aeec2cc3ddc"
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "isHoliday": "$.External.isHoliday",
+          "message": "$.External.message"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "bb8e9a41-5d50-47d6-899f-a39a9cb0ca4a",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "92d4b83d-0a18-4840-85cd-5fb633fde804",
+        "Errors": [
+          {
+            "NextAction": "92d4b83d-0a18-4840-85cd-5fb633fde804",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:039765606255:function:InterVision-HolidayLambdaFunction",
+        "InvocationTimeLimitSeconds": "3",
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "fa27215f-2efc-4dae-8bab-0aeec2cc3ddc",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "bb8e9a41-5d50-47d6-899f-a39a9cb0ca4a",
+        "Errors": [
+          {
+            "NextAction": "bb8e9a41-5d50-47d6-899f-a39a9cb0ca4a",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ContactFlowId": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/contact-flow/f53e86dd-edd6-424f-9967-8fe0c1e07e5c"
+      },
+      "Identifier": "2c0446db-643a-4e35-94b4-d4e8f073049b",
+      "Type": "TransferToFlow",
+      "Transitions": {
+        "NextAction": "6e5b5d57-5213-47cb-8d31-aaf876c1034b",
+        "Errors": [
+          {
+            "NextAction": "6e5b5d57-5213-47cb-8d31-aaf876c1034b",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "CustomerQueue": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/contact-flow/9286dccd-27f7-4b9f-8e9b-3198581f9744"
+        }
+      },
+      "Identifier": "c1689286-60f2-4f05-b3cf-4073d3c89765",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "cd6da5c2-29e0-4cf4-8fb6-de6dbbec316f",
+        "Errors": [
+          {
+            "NextAction": "b84998c7-a30a-42f0-abf8-a297beac4116",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:039765606255:function:InterVision-PromptLookupLambdaFunction",
+        "InvocationTimeLimitSeconds": "3",
+        "LambdaInvocationAttributes": {
+          " PromptId": "MainGreeting"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "91bf72f8-dbeb-42e7-9a2f-24272a0a54c5",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "cf3a95ae-c334-4b6c-9038-724f89e17fbd",
+        "Errors": [
+          {
+            "NextAction": "d25140db-b55a-49ee-a4ce-b0a711c2820f",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "CustomerWhisper": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/contact-flow/e35a251b-5ef0-47ca-9ab4-6986365e4567"
+        },
+        "EventHooksConfiguration": {
+          "CustomerWhisper": {
+            "DisableExecution": "false"
+          }
+        }
+      },
+      "Identifier": "cd6da5c2-29e0-4cf4-8fb6-de6dbbec316f",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "9429d4d9-ef5b-4b45-ac9a-33e4f1fe43c8",
+        "Errors": [
+          {
+            "NextAction": "b84998c7-a30a-42f0-abf8-a297beac4116",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "CustomerHold": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/contact-flow/3816cff8-2d17-4e32-a2ba-854c5b3ac10f"
+        }
+      },
+      "Identifier": "745e067b-a7b5-498d-9329-e7470093747f",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "91bf72f8-dbeb-42e7-9a2f-24272a0a54c5",
+        "Errors": [
+          {
+            "NextAction": "b84998c7-a30a-42f0-abf8-a297beac4116",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowModuleId": "d6ed9698-91ee-4a16-8001-341380b40cb4"
+      },
+      "Identifier": "b84998c7-a30a-42f0-abf8-a297beac4116",
+      "Type": "InvokeFlowModule",
+      "Transitions": {
+        "NextAction": "2c4d8163-9e44-425c-8735-0b94a6bf889e",
+        "Errors": [
+          {
+            "NextAction": "2c4d8163-9e44-425c-8735-0b94a6bf889e",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "AgentHold": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/contact-flow/40dab8bc-9728-4a1b-b67d-d693122bc875"
+        }
+      },
+      "Identifier": "c3ea608d-ceaa-444e-99c2-e37f5bbe197c",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "745e067b-a7b5-498d-9329-e7470093747f",
+        "Errors": [
+          {
+            "NextAction": "b84998c7-a30a-42f0-abf8-a297beac4116",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "AgentWhisper": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/contact-flow/4537a319-5de1-41a5-97c4-fe6506976280"
+        },
+        "EventHooksConfiguration": {
+          "AgentWhisper": {
+            "DisableExecution": "false"
+          }
+        }
+      },
+      "Identifier": "9429d4d9-ef5b-4b45-ac9a-33e4f1fe43c8",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "6e79dca5-58ad-4092-a272-bfad40dd8be7",
+        "Errors": [
+          {
+            "NextAction": "b84998c7-a30a-42f0-abf8-a297beac4116",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "EventHooks": {
+          "CustomerRemaining": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/contact-flow/14840254-76f5-40f7-a31e-12f400c08711"
+        }
+      },
+      "Identifier": "6e79dca5-58ad-4092-a272-bfad40dd8be7",
+      "Type": "UpdateContactEventHooks",
+      "Transitions": {
+        "NextAction": "c3ea608d-ceaa-444e-99c2-e37f5bbe197c",
+        "Errors": [
+          {
+            "NextAction": "b84998c7-a30a-42f0-abf8-a297beac4116",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ContactFlowId": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/contact-flow/4546bd2b-a7fb-47a1-9398-0f0bb3f706c7"
+      },
+      "Identifier": "59e4cdc7-1d2f-4e2d-98c9-90fa98953990",
+      "Type": "TransferToFlow",
+      "Transitions": {
+        "NextAction": "6e5b5d57-5213-47cb-8d31-aaf876c1034b",
+        "Errors": [
+          {
+            "NextAction": "6e5b5d57-5213-47cb-8d31-aaf876c1034b",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "2"
+      },
+      "Identifier": "e744ea1f-4ae8-4a35-8863-2b881de2edd9",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "ff53063e-72bb-4fa8-a7a1-a13f5e28d3ea",
+        "Conditions": [
+          {
+            "NextAction": "1de79e8e-ebac-4d0d-b675-7f293dfc7896",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "ff53063e-72bb-4fa8-a7a1-a13f5e28d3ea",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5",
+        "Text": "$.External.MainMenu"
+      },
+      "Identifier": "1de79e8e-ebac-4d0d-b675-7f293dfc7896",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "e744ea1f-4ae8-4a35-8863-2b881de2edd9",
+        "Conditions": [
+          {
+            "NextAction": "59e4cdc7-1d2f-4e2d-98c9-90fa98953990",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          },
+          {
+            "NextAction": "ff53063e-72bb-4fa8-a7a1-a13f5e28d3ea",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2"
+              ]
+            }
+          },
+          {
+            "NextAction": "e744ea1f-4ae8-4a35-8863-2b881de2edd9",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "9"
+              ]
+            }
+          },
+          {
+            "NextAction": "2c0446db-643a-4e35-94b4-d4e8f073049b",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "3"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "e744ea1f-4ae8-4a35-8863-2b881de2edd9",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "e744ea1f-4ae8-4a35-8863-2b881de2edd9",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "6e5b5d57-5213-47cb-8d31-aaf876c1034b",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowModuleId": "d6ed9698-91ee-4a16-8001-341380b40cb4"
+      },
+      "Identifier": "6e5b5d57-5213-47cb-8d31-aaf876c1034b",
+      "Type": "InvokeFlowModule",
+      "Transitions": {
+        "NextAction": "03f748d5-76ab-42ae-b925-1bbe7fc47f9d",
+        "Errors": [
+          {
+            "NextAction": "03f748d5-76ab-42ae-b925-1bbe7fc47f9d",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ContactFlowId": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/contact-flow/dd9c0406-7135-43eb-83c8-553324ec2302"
+      },
+      "Identifier": "ff53063e-72bb-4fa8-a7a1-a13f5e28d3ea",
+      "Type": "TransferToFlow",
+      "Transitions": {
+        "NextAction": "6e5b5d57-5213-47cb-8d31-aaf876c1034b",
+        "Errors": [
+          {
+            "NextAction": "6e5b5d57-5213-47cb-8d31-aaf876c1034b",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "2"
+      },
+      "Identifier": "9999bf94-3c83-4162-9699-168348825b75",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "d9744309-f3f3-4e06-a82f-5626aafda443",
+        "Conditions": [
+          {
+            "NextAction": "6518c7df-a654-4c4b-a50d-a627740012a3",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "d9744309-f3f3-4e06-a82f-5626aafda443",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ContactFlowId": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/contact-flow/06b6438c-7ad8-4da6-a25a-0d9735917c79"
+      },
+      "Identifier": "d9744309-f3f3-4e06-a82f-5626aafda443",
+      "Type": "TransferToFlow",
+      "Transitions": {
+        "NextAction": "7eb216f4-dee8-492b-b86a-7f77d0611842",
+        "Errors": [
+          {
+            "NextAction": "7eb216f4-dee8-492b-b86a-7f77d0611842",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ContactFlowId": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/contact-flow/967c2a2a-cd26-4350-90d2-fcce52f21227"
+      },
+      "Identifier": "4c302c44-ee24-4ac0-8c75-54994aeba624",
+      "Type": "TransferToFlow",
+      "Transitions": {
+        "NextAction": "7eb216f4-dee8-492b-b86a-7f77d0611842",
+        "Errors": [
+          {
+            "NextAction": "7eb216f4-dee8-492b-b86a-7f77d0611842",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5",
+        "Text": "$.External.MainMenu"
+      },
+      "Identifier": "6518c7df-a654-4c4b-a50d-a627740012a3",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "9999bf94-3c83-4162-9699-168348825b75",
+        "Conditions": [
+          {
+            "NextAction": "33fd6e68-1afb-4ed1-8a28-e0b30e5fa969",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          },
+          {
+            "NextAction": "d9744309-f3f3-4e06-a82f-5626aafda443",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2"
+              ]
+            }
+          },
+          {
+            "NextAction": "4c302c44-ee24-4ac0-8c75-54994aeba624",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "3"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "9999bf94-3c83-4162-9699-168348825b75",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "9999bf94-3c83-4162-9699-168348825b75",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "7eb216f4-dee8-492b-b86a-7f77d0611842",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowModuleId": "f86981aa-fb57-48ed-b008-64db0701f450"
+      },
+      "Identifier": "7eb216f4-dee8-492b-b86a-7f77d0611842",
+      "Type": "InvokeFlowModule",
+      "Transitions": {
+        "NextAction": "92cf374c-0936-46cf-a983-bbb02f5c5469",
+        "Errors": [
+          {
+            "NextAction": "92cf374c-0936-46cf-a983-bbb02f5c5469",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ContactFlowId": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/contact-flow/a3eaf145-f767-4b6d-aa82-977719703a31"
+      },
+      "Identifier": "33fd6e68-1afb-4ed1-8a28-e0b30e5fa969",
+      "Type": "TransferToFlow",
+      "Transitions": {
+        "NextAction": "7eb216f4-dee8-492b-b86a-7f77d0611842",
+        "Errors": [
+          {
+            "NextAction": "7eb216f4-dee8-492b-b86a-7f77d0611842",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}

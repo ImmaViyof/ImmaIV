@@ -1,0 +1,329 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "67422090-25e2-4f3e-a6eb-8d7611881ede",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 40,
+      "y": 40
+    },
+    "ActionMetadata": {
+      "b878111d-3e9f-4140-a59b-46379a76f6cd": {
+        "position": {
+          "x": 829.6,
+          "y": 524
+        }
+      },
+      "9db08aad-ec0b-4475-a44c-8459f2a87fe4": {
+        "position": {
+          "x": 1549.6,
+          "y": 387.2
+        }
+      },
+      "762f1882-3f82-40fa-87ff-9e4239cbd734": {
+        "position": {
+          "x": 830.4,
+          "y": 267.2
+        },
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "b7042595-cfba-42b2-be92-b95faa918e6f": {
+        "position": {
+          "x": 1070.4,
+          "y": 86.4
+        },
+        "parameters": {
+          "PromptId": {
+            "displayName": "Music_Jazz_MyTimetoFly_Inst.wav"
+          }
+        },
+        "promptName": "Music_Jazz_MyTimetoFly_Inst.wav"
+      },
+      "aa3d6c2f-e484-4ee7-9cbf-a576ac5b2106": {
+        "position": {
+          "x": 1546.4,
+          "y": 151.2
+        }
+      },
+      "bf9b1979-49b8-4369-80fe-638f22dcc735": {
+        "position": {
+          "x": 1332,
+          "y": 340.8
+        },
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "34c416d1-59c1-4b96-9b4c-6413a908ba4a": {
+        "position": {
+          "x": 1096.8,
+          "y": 305.6
+        },
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "691409c3-fa50-420b-9250-79dd1b1fdeac": {
+        "position": {
+          "x": 1336,
+          "y": 101.6
+        },
+        "parameters": {
+          "PromptId": {
+            "displayName": "Music_Pop_ThisAndThatIsLife_Inst.wav"
+          }
+        },
+        "promptName": "Music_Pop_ThisAndThatIsLife_Inst.wav"
+      },
+      "67422090-25e2-4f3e-a6eb-8d7611881ede": {
+        "position": {
+          "x": 348.8,
+          "y": 61.6
+        },
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "InterVision-PromptLookupLambdaFunction"
+          }
+        },
+        "dynamicMetadata": {
+          "PromptId": false
+        }
+      },
+      "1eb06d71-e8f3-43a4-a160-f836455e9573": {
+        "position": {
+          "x": 545.6,
+          "y": 358.4
+        },
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "05f98cee-2d7e-4ea3-868a-5244fc6b59c4": {
+        "position": {
+          "x": 828,
+          "y": 82.4
+        },
+        "parameters": {
+          "PromptId": {
+            "displayName": "Music_Pop_ThisAndThatIsLife_Inst.wav"
+          }
+        },
+        "promptName": "Music_Pop_ThisAndThatIsLife_Inst.wav"
+      },
+      "5814fd7a-4432-4dc7-be48-0aea63221739": {
+        "position": {
+          "x": 570.4,
+          "y": 117.6
+        },
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      }
+    },
+    "Annotations": [],
+    "name": "InterVision-TransferQueueFlow",
+    "description": "",
+    "type": "queueTransfer",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {},
+      "Identifier": "b878111d-3e9f-4140-a59b-46379a76f6cd",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {},
+      "Identifier": "9db08aad-ec0b-4475-a44c-8459f2a87fe4",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "Text": "$.External.TransferToQueueMessage"
+      },
+      "Identifier": "762f1882-3f82-40fa-87ff-9e4239cbd734",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "b7042595-cfba-42b2-be92-b95faa918e6f",
+        "Errors": [
+          {
+            "NextAction": "1eb06d71-e8f3-43a4-a160-f836455e9573",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "PromptId": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/prompt/75285ba2-cd98-42f1-bc74-8aa33698370f"
+      },
+      "Identifier": "b7042595-cfba-42b2-be92-b95faa918e6f",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "34c416d1-59c1-4b96-9b4c-6413a908ba4a",
+        "Errors": [
+          {
+            "NextAction": "bf9b1979-49b8-4369-80fe-638f22dcc735",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "aa3d6c2f-e484-4ee7-9cbf-a576ac5b2106",
+      "Type": "TransferContactToQueue",
+      "Transitions": {
+        "NextAction": "bf9b1979-49b8-4369-80fe-638f22dcc735",
+        "Errors": [
+          {
+            "NextAction": "9db08aad-ec0b-4475-a44c-8459f2a87fe4",
+            "ErrorType": "QueueAtCapacity"
+          },
+          {
+            "NextAction": "bf9b1979-49b8-4369-80fe-638f22dcc735",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "$.External.SystemFailure"
+      },
+      "Identifier": "bf9b1979-49b8-4369-80fe-638f22dcc735",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "9db08aad-ec0b-4475-a44c-8459f2a87fe4",
+        "Errors": [
+          {
+            "NextAction": "9db08aad-ec0b-4475-a44c-8459f2a87fe4",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "$.External.EstimatedWTQ"
+      },
+      "Identifier": "34c416d1-59c1-4b96-9b4c-6413a908ba4a",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "691409c3-fa50-420b-9250-79dd1b1fdeac",
+        "Errors": [
+          {
+            "NextAction": "bf9b1979-49b8-4369-80fe-638f22dcc735",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "PromptId": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/prompt/e3224d07-cd90-4882-bef5-133f6bef69ea"
+      },
+      "Identifier": "691409c3-fa50-420b-9250-79dd1b1fdeac",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "aa3d6c2f-e484-4ee7-9cbf-a576ac5b2106",
+        "Errors": [
+          {
+            "NextAction": "bf9b1979-49b8-4369-80fe-638f22dcc735",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:039765606255:function:InterVision-PromptLookupLambdaFunction",
+        "InvocationTimeLimitSeconds": "3",
+        "LambdaInvocationAttributes": {
+          "PromptId": "TransferToQueue"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "67422090-25e2-4f3e-a6eb-8d7611881ede",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "5814fd7a-4432-4dc7-be48-0aea63221739",
+        "Errors": [
+          {
+            "NextAction": "1eb06d71-e8f3-43a4-a160-f836455e9573",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "$.External.SystemFailure"
+      },
+      "Identifier": "1eb06d71-e8f3-43a4-a160-f836455e9573",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "b878111d-3e9f-4140-a59b-46379a76f6cd",
+        "Errors": [
+          {
+            "NextAction": "b878111d-3e9f-4140-a59b-46379a76f6cd",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "PromptId": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/prompt/e3224d07-cd90-4882-bef5-133f6bef69ea"
+      },
+      "Identifier": "05f98cee-2d7e-4ea3-868a-5244fc6b59c4",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "762f1882-3f82-40fa-87ff-9e4239cbd734",
+        "Errors": [
+          {
+            "NextAction": "1eb06d71-e8f3-43a4-a160-f836455e9573",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "$.External.TransferToQueue"
+      },
+      "Identifier": "5814fd7a-4432-4dc7-be48-0aea63221739",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "05f98cee-2d7e-4ea3-868a-5244fc6b59c4",
+        "Errors": [
+          {
+            "NextAction": "1eb06d71-e8f3-43a4-a160-f836455e9573",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}

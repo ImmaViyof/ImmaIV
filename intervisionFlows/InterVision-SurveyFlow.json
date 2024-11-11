@@ -1,0 +1,312 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "77d92e7a-0360-4060-a2b6-1491ba80b5fd",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 40,
+      "y": 40
+    },
+    "ActionMetadata": {
+      "c593402e-5bc9-4e83-a957-7be9dd85a781": {
+        "position": {
+          "x": 1192.8,
+          "y": 307.2
+        }
+      },
+      "b00b165c-b01b-44f2-9fcb-ab8989274d03": {
+        "position": {
+          "x": 1195.2,
+          "y": 108
+        }
+      },
+      "ceef2fc6-ecb2-475a-a67f-ea0f3ed40cb5": {
+        "position": {
+          "x": 208.8,
+          "y": 474.4
+        }
+      },
+      "77d92e7a-0360-4060-a2b6-1491ba80b5fd": {
+        "position": {
+          "x": 196.8,
+          "y": -173.6
+        },
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "InterVision-PromptLookupLambdaFunction"
+          }
+        },
+        "dynamicMetadata": {
+          "PromptId": false
+        }
+      },
+      "f16bb1da-8f3f-4ca9-afff-88c777e107df": {
+        "position": {
+          "x": 512.8,
+          "y": 148.8
+        },
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "InterVision-SurveyFunction"
+          },
+          "LambdaInvocationAttributes": {
+            "contactID": {
+              "useDynamic": true
+            },
+            "Agent": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicMetadata": {
+          "customerFeedback": false,
+          "contactID": true,
+          "Agent": true
+        }
+      },
+      "05157f34-ad90-473b-a9af-ab046769ac65": {
+        "position": {
+          "x": 196,
+          "y": 60
+        },
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true,
+        "conditionMetadata": [
+          {
+            "id": "f01cb845-5e06-4a2b-839c-2b098a48e571",
+            "value": "1"
+          },
+          {
+            "id": "9dfdeb9c-465a-496f-8e52-6a750313a7aa",
+            "value": "2"
+          }
+        ]
+      },
+      "72ae775f-14b7-4e29-918e-039d6de428a1": {
+        "position": {
+          "x": 888.8,
+          "y": 56
+        },
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "b55ada39-2901-46a9-92be-7fe5b29643a2": {
+        "position": {
+          "x": 904.8,
+          "y": 280
+        },
+        "parameters": {
+          "FlowModuleId": {
+            "displayName": "InterVision-SytemFailure"
+          }
+        },
+        "contactFlowModuleName": "InterVision-SytemFailure"
+      },
+      "916e355a-58ef-4c29-969f-4355e1b1a92f": {
+        "position": {
+          "x": 504,
+          "y": -44
+        },
+        "parameters": {
+          "LambdaInvocationAttributes": {
+            "contactID": {
+              "useDynamic": true
+            },
+            "Agent": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicMetadata": {
+          "customerFeedback": false,
+          "contactID": true,
+          "Agent": true
+        }
+      }
+    },
+    "Annotations": [],
+    "name": "InterVision-SurveyFlow",
+    "description": "",
+    "type": "contactFlow",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {},
+      "Identifier": "c593402e-5bc9-4e83-a957-7be9dd85a781",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {},
+      "Identifier": "b00b165c-b01b-44f2-9fcb-ab8989274d03",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {},
+      "Identifier": "ceef2fc6-ecb2-475a-a67f-ea0f3ed40cb5",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:039765606255:function:InterVision-PromptLookupLambdaFunction",
+        "InvocationTimeLimitSeconds": "3",
+        "LambdaInvocationAttributes": {
+          "PromptId": "RatingPrompt"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "77d92e7a-0360-4060-a2b6-1491ba80b5fd",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "05157f34-ad90-473b-a9af-ab046769ac65",
+        "Errors": [
+          {
+            "NextAction": "b55ada39-2901-46a9-92be-7fe5b29643a2",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:039765606255:function:InterVision-SurveyFunction",
+        "InvocationTimeLimitSeconds": "3",
+        "LambdaInvocationAttributes": {
+          "customerFeedback": "2",
+          "contactID": "$.ContactId",
+          "Agent": "$.Agent.UserName"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "f16bb1da-8f3f-4ca9-afff-88c777e107df",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "72ae775f-14b7-4e29-918e-039d6de428a1",
+        "Errors": [
+          {
+            "NextAction": "b55ada39-2901-46a9-92be-7fe5b29643a2",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "15",
+        "Text": "$.External.RatingPrompt"
+      },
+      "Identifier": "05157f34-ad90-473b-a9af-ab046769ac65",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "ceef2fc6-ecb2-475a-a67f-ea0f3ed40cb5",
+        "Conditions": [
+          {
+            "NextAction": "916e355a-58ef-4c29-969f-4355e1b1a92f",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          },
+          {
+            "NextAction": "f16bb1da-8f3f-4ca9-afff-88c777e107df",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "ceef2fc6-ecb2-475a-a67f-ea0f3ed40cb5",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "ceef2fc6-ecb2-475a-a67f-ea0f3ed40cb5",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "b55ada39-2901-46a9-92be-7fe5b29643a2",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "$.External.SurveyFeedback"
+      },
+      "Identifier": "72ae775f-14b7-4e29-918e-039d6de428a1",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "b00b165c-b01b-44f2-9fcb-ab8989274d03",
+        "Errors": [
+          {
+            "NextAction": "c593402e-5bc9-4e83-a957-7be9dd85a781",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowModuleId": "d6ed9698-91ee-4a16-8001-341380b40cb4"
+      },
+      "Identifier": "b55ada39-2901-46a9-92be-7fe5b29643a2",
+      "Type": "InvokeFlowModule",
+      "Transitions": {
+        "NextAction": "c593402e-5bc9-4e83-a957-7be9dd85a781",
+        "Errors": [
+          {
+            "NextAction": "c593402e-5bc9-4e83-a957-7be9dd85a781",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:241670674516:function:SurveyFunction",
+        "InvocationTimeLimitSeconds": "3",
+        "LambdaInvocationAttributes": {
+          "customerFeedback": "1",
+          "contactID": "$.ContactId",
+          "Agent": "$.Agent.UserName"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "916e355a-58ef-4c29-969f-4355e1b1a92f",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "72ae775f-14b7-4e29-918e-039d6de428a1",
+        "Errors": [
+          {
+            "NextAction": "b55ada39-2901-46a9-92be-7fe5b29643a2",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "0c4ff415-ddf1-4062-87f9-7055d8f4433e",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 40,
+      "y": 40
+    },
+    "ActionMetadata": {
+      "b79127f2-1504-417c-b7e6-c6158c320295": {
+        "position": {
+          "x": 516,
+          "y": 303.2
+        }
+      },
+      "fdb447f4-4259-4036-b8ea-1b5d8294b67e": {
+        "position": {
+          "x": 516,
+          "y": 80
+        },
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "8f326928-09d6-4a62-bed0-acd469ee1ee6": {
+        "position": {
+          "x": 225.6,
+          "y": 284
+        },
+        "parameters": {
+          "PromptId": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "0c4ff415-ddf1-4062-87f9-7055d8f4433e": {
+        "position": {
+          "x": 212,
+          "y": 60
+        },
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "InterVision-PromptLookupLambdaFunction"
+          }
+        },
+        "dynamicMetadata": {
+          "PromptId": false
+        }
+      }
+    },
+    "Annotations": [],
+    "name": "InterVision-CustomerWhisperFlow",
+    "description": "",
+    "type": "customerWhisper",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {},
+      "Identifier": "b79127f2-1504-417c-b7e6-c6158c320295",
+      "Type": "EndFlowExecution",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "Text": "$.External.SystemFailure"
+      },
+      "Identifier": "fdb447f4-4259-4036-b8ea-1b5d8294b67e",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "b79127f2-1504-417c-b7e6-c6158c320295"
+      }
+    },
+    {
+      "Parameters": {
+        "PromptId": "$.External.CustomerWhisper"
+      },
+      "Identifier": "8f326928-09d6-4a62-bed0-acd469ee1ee6",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "b79127f2-1504-417c-b7e6-c6158c320295"
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:039765606255:function:InterVision-PromptLookupLambdaFunction",
+        "InvocationTimeLimitSeconds": "3",
+        "LambdaInvocationAttributes": {
+          "PromptId": "CustomerWhisper"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "0c4ff415-ddf1-4062-87f9-7055d8f4433e",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "8f326928-09d6-4a62-bed0-acd469ee1ee6",
+        "Errors": [
+          {
+            "NextAction": "fdb447f4-4259-4036-b8ea-1b5d8294b67e",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}

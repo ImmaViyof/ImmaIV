@@ -1,0 +1,54 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "14ade18f-0cc0-40fc-b7d7-a80171445216",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 40,
+      "y": 40
+    },
+    "ActionMetadata": {
+      "14ade18f-0cc0-40fc-b7d7-a80171445216": {
+        "position": {
+          "x": 169.6,
+          "y": 63.2
+        },
+        "parameters": {
+          "Messages": [
+            {
+              "PromptId": {
+                "displayName": "Music_Pop_ThisAndThatIsLife_Inst.wav"
+              }
+            }
+          ]
+        },
+        "audio": [
+          {
+            "id": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/prompt/e3224d07-cd90-4882-bef5-133f6bef69ea",
+            "text": "Music_Pop_ThisAndThatIsLife_Inst.wav",
+            "type": "Prompt"
+          }
+        ]
+      }
+    },
+    "Annotations": [],
+    "name": "InterVision-AgentHoldFlow",
+    "description": "",
+    "type": "agentHold",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "Messages": [
+          {
+            "PromptId": "arn:aws:connect:us-east-1:039765606255:instance/2c40b418-8fb1-43b7-ad81-f7d4155a0a7f/prompt/e3224d07-cd90-4882-bef5-133f6bef69ea"
+          }
+        ]
+      },
+      "Identifier": "14ade18f-0cc0-40fc-b7d7-a80171445216",
+      "Type": "MessageParticipantIteratively",
+      "Transitions": {}
+    }
+  ]
+}
